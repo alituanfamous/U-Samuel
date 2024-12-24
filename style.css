@@ -1,0 +1,89 @@
+*{
+   
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+  
+
+}
+.person{
+    padding: 1rem;
+    margin: 3% auto;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    background: #077d;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+     backdrop-filter: blur(15px);
+     padding: 1rem;
+   position: fixed;
+     margin-bottom: 1rem;
+     margin-top: -2rem;
+  
+
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.num{
+    display: inline-block;
+}
+#mb{
+    font-weight: 700;
+    color: #07c;
+}
+.ject{
+    font-size: 12px;
+}
+#about,#education,#skills,#contact{
+backdrop-filter: blur(px);
+box-shadow: 0 0 5px 0 lightgrey;
+border-radius: 5px;
+padding: 1rem;
+margin: 10px auto;
+}
+
+#about form{
+    padding: 3rem;
+    margin: 2% auto;
+
+}
+form input,textarea{
+    padding: 6px;
+    border-radius: 5px;
+    outline-color: #07d;
+    border: 0.7px solid lightgrey;
+    width: 100%;
+
+}
+button{
+    padding: 7px;
+    background: #07d;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .4s;
+}
+button:hover{
+    box-shadow: 0 0 10px 0 #067d;
+    cursor: pointer;
+}
+.home{
+    margin-top: 3rem;
+}
+
+.img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
