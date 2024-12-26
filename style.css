@@ -1,0 +1,178 @@
+*{
+   
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+  
+
+}
+.person{
+    padding: 1rem;
+    margin: 3% auto;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    background: #f0f0f0;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+     backdrop-filter: blur(15px);
+     padding: 1rem;
+   position: fixed;
+     margin-bottom: 1rem;
+     margin-top: -2rem;
+  
+
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.num{
+    display: inline-block;
+}
+#mb{
+    font-weight: 700;
+    color: #07c;
+}
+.ject{
+    font-size: 14px;
+}
+#about,#education,#skills,#contact{
+backdrop-filter: blur(px);
+box-shadow: 0 0 5px 0 lightgrey;
+border-radius: 5px;
+padding: 1rem;
+margin: 10px auto;
+}
+
+#about form{
+    padding: 3rem;
+    margin: 2% auto;
+
+}
+form input,textarea{
+    padding: 6px;
+    border-radius: 5px;
+    outline-color: #07d;
+    border: 0.7px solid lightgrey;
+    width: 100%;
+
+}
+button{
+    padding: 7px;
+    background: #07d;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .4s;
+}
+button:hover{
+    box-shadow: 0 0 10px 0 #067d;
+    cursor: pointer;
+}
+.home{
+    margin-top: 3rem;
+}
+
+.img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    box-shadow: 0 0 10px 0 #06d;
+    animation: fine 5s linear infinite;
+
+}
+@keyframes fine{
+       from{
+        transform: rotate(0deg);
+       
+       }
+       to{
+        transform: rotate(360deg);
+      
+
+       }
+}
+.chat{
+    
+
+}
+  @keyframes all{
+    from{
+        top: 40%;
+        opacity: 10%;
+
+    }
+    to{
+        top: 19%;
+    }
+  }
+.form .input-box .txt{
+    min-width: 15vw;
+    max-width: 20vw;
+    padding: 15px;
+    outline-color: #07b;
+    border: none;
+    border-radius: 30px;
+    margin-top: 13rem;
+    background: #f0f0f0;
+    border: 2px solid #07b;
+    
+
+}
+span{
+    right: 80%;
+    font-size: 35px;
+    color: grey;
+    padding: 1px 10px 1px 10px;
+   margin: 5%;
+  
+}
+span:hover{
+    color: #07d;
+    cursor: pointer;
+    background: #f0f0f0;
+    border-radius: 50%;
+
+}
+.input-box #sent{
+    right: 1%;
+    cursor: pointer;
+    left: 72%;
+    padding: 13px;
+    border-radius: 20px;
+   margin-top: -2.8rem;
+   background: #fff;
+   position: absolute;
+   position: fixed;
+   width: 3vw;
+   border: none;
+   color: black;
+}
+.input-box .fa:hover{
+    color: #07b;
+}
+.bot{
+    font-size: 19px;
+
+}
+sup{
+    font-size: 10px;
+    color: #07d;
+    text-transform: capitalize;
+}
+#mes{
+   margin-top: 2rem;
+   font-size: 15px;
+   background: #f0f0d0;
+   border-radius: 12px 12px 0 12px;
+   padding: 4.5px;
+   display: none;
+}
