@@ -82,11 +82,11 @@ button:hover{
 }
 
 .img img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%; 
     box-shadow: 0 0 10px 0 #06d;
-    animation: fine 5s linear infinite;
+    animation: fine 10s linear infinite;
 
 }
 @keyframes fine{
