@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="img/logo.jpeg">
+    <title>U-samuel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="css/all.css">
+    <link rel="stylesheet"  href="css/fontawesome.min.css">
+  
+     <style>
+      
+      @media (max-width: 768px){
+        body{
+            scroll-behavior:auto;
+        }
+        .person{
+    padding: 0.2rem auto;
+    margin: 2% auto;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    background: transparent;
+    margin-top: 3rem;
+    
+}
+     .img img{
+    width: 20pc;
+    height: 20pc;
+    border-radius: 50%;
+
+
+}
+
+        main{
+            width: 100%;
+            background: transparent;
+            backdrop-filter: blur(5px);
+            margin-top: 0.0rem;
+        }
+        .navigate{
+            display: none;
+        }
+        .home{
+            width: 100;
+            padding: 1rem;
+            margin: auto;
+        }
+        .home-content{
+            font-size: 15px;
+
+        }
+        #about{
+            margin-top: 3rem;
+        }
+        #about,#education,#skills,#contact{
+            margin: 20px auto;
+           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+           font: 17px;
+            line-height: 25px;
+        }
+        h1{
+            padding: 0.5rem;
+        }
+        h4{
+            color: #07d;
+        }
+        .resume{
+            margin-top: 0.4rem;
+        }
+      .resume a{
+        background: #07d;
+        color: white;
+        padding: 0.6rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 10px;
+        transition: 1s;
+        box-shadow: 0 0 5px 0 #0763;
+
+      }
+      .resume a:hover{
+         box-shadow: 0 0 15px 0 #06d7;
+         transform-style: flat;
+         transform: scaleY(2);
+
+      }
+      .logo{
+        font-size: 20px;
+        font-weight: 600;
+        font-display: swap;
+      }
+      form{
+        width: 90%;
+        margin: 5px auto;
+      }
+      label{
+        color: #07d;
+        font-weight: 600;
+      }
+      form input,textarea{
+        width: 100%;
+      }
+   .btn{
+    position: absolute;
+    top: 80%;
+    align-self: center;
+    background: #56d;
+    border-radius: 50px;
+    padding: 2pc;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    position: fixed;
+    border: none;
+    right: 7%;
+    min-width: 20pc;
+    letter-spacing: 0.3pc;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+
+   }
+
+   .chat{
+    padding: 20px;
+    margin: auto;
+    min-width: 350px;
+   min-height:520px;
+    background: #baba;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom: 0;
+    position: fixed;
+    overflow: hidden;
+    display: none;
+    box-shadow: 0 0 5px 0 #f0f0f0;
+   z-index: 1
+
+}
+  @keyframes all{
+    from{
+        top: 40%;
+        opacity: 10%;
+
+    }
+    to{
+        top: 19%;
+    }
+  }
+#close {
+
+  font-size: 45px;
+  color: black;
+  top: 2%;
+  right: 10%;
+  position: absolute;
+  font-weight: 700;
+
+}
+
+#close:hover {
+  color: #07d;
+  cursor: pointer;
+  background: #f0f0f0;
+  border-radius: 50% ;
+  padding: 5px 15px 5px 15px;
+}
+#mes{
+  
+  max-width: 200px;
+  
+  
+}
+.whatsapp{
+  padding: 2pc;
+  margin: 1pc;
+  background: ghostwhite;
+  border-radius: 10px;
+  
+
+}
+.git{
+padding: 2pc;
+
+  margin: 1pc;
+
+  background: white;
+  border-radius: 10px;
+}
+.in{
+  padding: 2pc;
+
+  margin: 1pc;
+
+  background: white;
+  border-radius: 10px;
+
+
+}
+.git p{
+  font-size: 2pc;
+  font-weight: 600;
+}
+.whatsapp p{
+  font-size: 2pc;
+  font-weight: 600;
+  color: green;
+}
+.in p{
+  font-size: 2pc;
+  color: #07c;
+  font-weight: 600;
+}
+}
+
+
+       
+
+      }
+      @media(min-width: 768px) and (max-width: 1024px){
+        
+        main{
+            width: 100%;
+           margin-top: 0.0rem;
+        }
+           .person{
+    padding: 0.3rem;
+    margin: 2% auto;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    background: #f0f0f0;
+    margin-top: 4rem;
+
+}
+       .img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+        .navigate{
+            display: flex;
+
+        }
+        .navigate .active,focus{
+            color: #07c;
+            border-bottom: 0.4px dashed;
+            font-weight: 600;
+
+        }
+        .navigate a{
+            text-decoration: none;
+            font-weight: 500;
+            color: black;
+            word-spacing: 10%;
+            margin-top: 1rem;
+            margin-left: 2rem;
+            text-transform: capitalize;
+        }
+          .navigate a:hover,focus{
+            color: #07c;
+            border-bottom: 0.4px dashed;
+            font-weight: 600;
+        }
+        .home{
+            width: 100;
+            padding: 1rem;
+            margin: auto;
+        }
+        .home-content{
+            font-size: 16px;
+            display: block;
+
+        }
+        #about,#education,#skills,#contact{
+            margin: 10px auto;
+            padding: 3rem;
+            justify-content: center;
+            box-shadow: 0 0 2px 0 lightgrey;
+            width: 90%;
+            line-height: 30px;
+
+
+           
+        }
+          .resume{
+            margin-top: 1rem;
+            margin-right: 3rem;
+        }
+      .resume a{
+        background: #07d;
+        color: white;
+        padding: 0.4rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 13px;
+
+      }
+        .logo{
+        font-size: 20px;
+        font-weight: 600;
+        font-display: swap;
+        margin-left: 3rem;
+        margin-top: 1rem;
+      }
+       h4{
+            color: #07d;
+        }
+        form{
+        width: 60%;
+        margin: 5px;
+        display: grid;
+      }
+      label{
+        color: #07d;
+        font-weight: 600;
+      }
+      form input,textarea{
+        width: 100%;
+        padding: 8px;
+      }
+      button{
+        width: 20%;
+        padding: 10px;
+      }
+      .btn{
+  display: none;
+   }
+
+      }
+      @media(min-width: 1024px){
+             main{
+            width: 100%;
+                    }
+        .navigate{
+            display: flex;
+        }  .navigate a:hover,focus{
+            color: #07c;
+            border-bottom: 0.4px dashed;
+            font-weight: 600;
+        }
+        .navigate a{
+            text-decoration: none;
+            font-weight: 500;
+            color: black;
+            word-spacing: 10%;
+            margin-top: 1rem;
+            margin-left: 2rem;
+            text-transform: capitalize;
+        }
+      
+        .home{
+            width: 100;
+            padding: 1rem;
+            margin: 20px auto;
+        }
+        .home-content{
+            font-size: 16px;
+            display: block;
+
+        }
+        #about,#education,#skills,#contact{
+            margin: 14px auto;
+            padding: 3rem 5rem 3rem 5rem;
+            justify-content: center;
+            box-shadow: 0 0 2px 0 lightgrey;
+            width: 95%;
+            line-height: 25px;
+
+
+           
+        }
+          .resume{
+            margin-top: 1rem;
+            margin-right: 3rem;
+        }
+      .resume a{
+        background: #07d;
+        color: white;
+        padding: 0.4rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 600;
+        box-shadow: 0 0 5px 0 #0035;
+        transition: 1s;
+
+      }
+      .resume a:hover{
+        box-shadow: 0 0 15px 0 #00fa;
+      }
+        .logo{
+        font-size: 20px;
+        font-weight: 600;
+        font-display: swap;
+        margin-left: 3rem;
+        margin-top: 1rem;
+      }
+       h4{
+            color: #07d;
+        }
+           form{
+        width: 50%;
+        margin: 2px ;
+        
+      }
+      label{
+        color: #07d;
+        font-weight: 500;
+        text-transform: capitalize;
+        font-size: 14px;
+      }
+      form input,textarea{
+        width: 80%;
+        padding: 9px;
+      }
+      button{
+      
+        padding: 10px;
+      }
+
+       .btn{
+    position: absolute;
+  top: 80%;
+  left: 90%;
+    align-self: center;
+    background: #f62f;
+    border-radius: 50%;
+    padding: 12px 13px 12px 13px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    position: fixed;
+    border: none;
+   }
+
+   .chat{
+    padding: 20px;
+    margin: 20px auto;
+    min-height: 20vh;
+    min-width: 40vh;
+    max-width: 40vh;
+    max-height: 60vh;
+    background: transparent;
+    border-radius: 20px;
+    justify-content: center;
+    align-content: center;
+    display: inline-block;
+    position: absolute;
+    display: none;
+    left: 79%;
+    top: 19%;
+    position: fixed;
+   box-shadow: 0 0 5px 0 #f0f0f0;
+    animation: all .2s ease-in normal;
+    backdrop-filter: blur(10px);
+    border-top-color: #07a;
+    border-top: 2px solid lightblue;border-top: 2px solid lightblue;
+    border-bottom: 2px solid lightblue;
+
+}
+
+      }
+        
+      
+    </style>
+</head>
+
+<body>
+<main>
+    <div class="header">
+        <p class="logo" >U-samuel</p>
+    </div>
+    <div class="navigate">
+     
+            <a href="index.html" class="active">home</a>
+            <a href="#education">education</a>
+             <a href="#skills">skills</a>
+              <a href="">experience</a>
+               <a href="#contact">contact</a>
+
+       
+    </div>
+        <div class="resume">
+           <a href="./portifolio/UMUHOZA Samuel.pdf" download ><i class="fa fa-book"></i> Resume</a>
+
+        </div>
+   
+
+</main>
+
+    <section class="home">
+     <div class="person">
+    <div class="img">
+        <img src="img/logo.png" alt="No thing here">
+
+    </div>
+    <div class="chat" id="chat">
+        <span id="close">&times</span>
+        <div class="whatsapp" id="w">
+           <p>Whatsapp</p>
+           <span><a href="https://wa.me/+250792514536"> view </a></span>
+
+
+        </div>
+        <div class="git" id="g">
+          <p>Github </p>
+          <span><a href="https://github.com/alituanfamous"> view </a></span>
+
+        </div>
+        <div class="in" id="l">
+          <p>LinkedIn </p>
+          <span><a href="https://linkedin.com/in/alituanfamous"> view </a></span>
+
+        </div>
+
+            </div>
+        </form>
+   
+
+    </div>
+</div>
+        <div class="home-content">
+            <div id="about">
+                <h1>About me</h1>
+                <hr><p>
+                I'm a passionate software developer with a flair for creativity. With a strong foundation in HTML, PHP, Laravel, JavaScript, and Bootstrap CSS, I bring ideas to life through clean, efficient code. When I'm not coding, I love to sketch, turning concepts and inspirations into visual art. My unique combination of technical skills and artistic vision drives me to build intuitive, user-focused designs that are as functional as they are beautiful.</p>
+
+            </div>
+            <div id="education">
+                <h1>Education</h1>
+                 <hr>
+                <h4>LYCEE SAINT ALEXANDRE SAULI DE 
+                MUHURA<i class="fa fa-checkm=-circle"></i> </h4>
+                <p>
+                Lycee De Muhura is a TSS school located in Gatsibo District in Eastern Province of Rwanda, And that is where i have gained my Hi
+                gh School Diploma in Software Development in August 2024. Thisis where i gained The Codding fundamentals skills</p>
+
+            </div>
+            <div id="skills"09ov."k ol">
+                <h1>skills </h1>
+                 <hr>
+                 <div class="flex">
+               <div class="sub">
+                <p class="ject">PHP</p>
+                <p class="ject">PYTHON</p>
+                <p class="ject">LARAVEL</p>
+                <p class="ject">HTM""L</p>
+                <p class="ject">JAVASCRIPT</p>
+                <p class="ject">CSS</p>
+                <p class="ject">BOOTSTRAP</p>
+               </div>
+               <div class="num">
+                <p id="mb">excellent</p>
+                <p id="mb">Good</p>
+                <p id="mb">Good</p>
+                <p id="mb">excellent</p>
+                <p id="mb">very good</p>
+                <p id="mb">excellent</p>
+                <p id="mb">excellent</p>
+
+
+               </div>
+           </div>
+
+
+               
+            </div>
+     
+            <button class="btn" id="btn">contact</button> 
+        </div>
+    </section>
+
+</body>
+</html>
+<script type="text/javascript">
+    let chat= document.getElementById('chat');
+    let close= document.getElementById('close');
+    let btn= document.getElementById('btn');
+    let message= document.getElementById('mes');
+    let show= document.getElementById('sent');
+    
+    
+        
+
+    btn.onclick= function(){
+        chat.style.display="block";
+        btn.style.background="orangered";
+    }
+    close.onclick= function(){
+        chat.style.display="none";
+    }
+    show.onclick= function(){
+        message.style.display="block";
+
+    }
+     
+
+          
+       
+            
+      
+       
+</script>
